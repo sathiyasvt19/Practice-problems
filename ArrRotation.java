@@ -8,8 +8,8 @@ class ArrRotation {
 		}
 		System.out.println();
 		int d=5;
-		System.out.println("Left Rotation with temp array");
-		ar.leftRotatetemp(a,d);
+		//System.out.println("Left Rotation with temp array");
+		//ar.leftRotatetemp(a,d);
 		System.out.println("Left Rotation one-by-one");
 		ar.leftRotationbf(a,d);
 	}
@@ -36,12 +36,12 @@ class ArrRotation {
 	void leftRotationbf(int[] a,int d) {
 		int len=a.length,j;
 		for(int i=0;i<d;i++){
-			System.out.println("hello");
-			for (int k=0;k<len;k++ ) {
-			System.out.print(a[k]+" ");
+		// 	System.out.println("hello");
+		// 	for (int k=0;k<len;k++ ) {
+		// 	System.out.print(a[k]+" ");
 			
-		}
-		System.out.println();
+		// }
+		// System.out.println();
 			int temp=a[0];
 			for(j=0;j<len-1;j++) {
 					a[j]=a[j+1];
