@@ -1,3 +1,10 @@
+
+//currentFloor =4 
+//totalFloor=9
+//0 <= currentFloor <= totalFloor-1
+//str=UUFFDUDDF (U-1 floor up,D-1 floor down F-Perivious opperatin fail)
+//output=4
+
 import java.util.*;
 public class Elevator {
 	int totalFloor,currentFloor;
@@ -9,6 +16,7 @@ public class Elevator {
 		e.getInput();
 		e.getFinalFloor();
 	}
+	//Get current floor,totla number of floor and sequence of operation. 
 	void getInput() {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Please enter the current floor:");
@@ -19,6 +27,7 @@ public class Elevator {
 		scan.nextLine();
 		str=scan.nextLine();	
 	}
+	//produce the destination floor after sequence of operation
 	void getFinalFloor() {
 		currentFloor=Integer.valueOf(cf);
 		char ch[] = str.toCharArray();
