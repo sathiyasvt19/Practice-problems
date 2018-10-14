@@ -42,9 +42,6 @@ public class Elevator {
 		if(currentFloor==0)
 			System.out.println("G");
 		else
-			System.out.println(currentFloor);
-		
+			System.out.println(currentFloor);	
 	}
-	
-
 }
